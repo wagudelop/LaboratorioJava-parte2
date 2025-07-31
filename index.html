@@ -10,63 +10,63 @@
 <body>
 
     <section id="pregunta 1">
-    <script>
-    <h1>Pregunta 1</h1>
-        //Escribe un código que recorra un arreglo de números y calcule la suma total. - 
-        //Pregunta: ¿Cómo se modifica el código para calcular el promedio de los números?  
+        <script>
+            <h1>Pregunta 1</h1>
+            //Escribe un código que recorra un arreglo de números y calcule la suma total. - 
+            //Pregunta: ¿Cómo se modifica el código para calcular el promedio de los números?  
 
-        let numeros = [1, 2, 3, 4, 5] // lista la pregunta 1
-        let suma = 0;
-        for (let i = 0; i < numeros.length; i++) {
-            suma = suma + numeros[i]
-        }
+            let numeros = [1, 2, 3, 4, 5] // lista la pregunta 1
+            let suma = 0;
+            for (let i = 0; i < numeros.length; i++) {
+                suma = suma + numeros[i]
+            }
 
-        //Calcular el promedio
-        let promedio = suma / numeros.length;
+            //Calcular el promedio
+            let promedio = suma / numeros.length;
 
-        //Resultado
-        console.log("la suma del arreglo es", suma)
-        console.log("El promedio del arreglo es:", promedio);
-    </script>
+            //Resultado
+            console.log("la suma del arreglo es", suma)
+            console.log("El promedio del arreglo es:", promedio);
+        </script>
     </section>
 
     <section id="pregunta 2">
-    <script>
-    <h1>Pregunta 2</h1>
-        //Crea un bucle `while` que solicite al usuario ingresar un número hasta que ingrese un número negativo. - 
-        //Pregunta: ¿Qué sucede si se inicializa el contador con un valor negativo? 
-        
-        let numero;
-        while(true){
-            numero=parseInt(prompt("Ingresa un número (negativo para salir)"));
-            if(numero<0){
-                break;
+        <script>
+            <h1>Pregunta 2</h1>
+            //Crea un bucle `while` que solicite al usuario ingresar un número hasta que ingrese un número negativo. - 
+            //Pregunta: ¿Qué sucede si se inicializa el contador con un valor negativo? 
+
+            let numero;
+            while (true) {
+                numero = parseInt(prompt("Ingresa un número (negativo para salir)"));
+                if (numero < 0) {
+                    break;
+                }
             }
-        }
-        console.log("Has salido del bucle");
-    </script>
+            console.log("Has salido del bucle");
+        </script>
 
-       <section id="pregunta 3">
-    <script>
-    <h1>Pregunta 3</h1>
+        <section id="pregunta 3">
+            <script>
+                <h1>Pregunta 3</h1>
 
-      //Implementa un programa que pida al usuario que ingrese una contraseña hasta que sea correcta.
-        //Pregunta: ¿Por qué se usa un bucle `do...while` en este caso en lugar de `while`?
+                //Implementa un programa que pida al usuario que ingrese una contraseña hasta que sea correcta.
+                //Pregunta: ¿Por qué se usa un bucle `do...while` en este caso en lugar de `while`?
 
-        let contraseña;
-        do {
-            contraseña = prompt("Ingrese contraseña:");
-            if (contraseña === null){
-                console.log("El usuario canceló");
-                break; //Sale del bucle
-            }
-            if (contraseña !== "wilder") {
-                console.log("contraseña incorrecta");
-            }
-        } while (contraseña !== "wilder");
+                let contraseña;
+                do {
+                    contraseña = prompt("Ingrese contraseña:");
+                    if (contraseña === null) {
+                        console.log("El usuario canceló");
+                        break; //Sale del bucle
+                    }
+                    if (contraseña !== "wilder") {
+                        console.log("contraseña incorrecta");
+                    }
+                } while (contraseña !== "wilder");
 
-        console.log("contraseña correcta");
-    </script>
+                console.log("contraseña correcta");
+            </script>
 </body>
 
 </html>
